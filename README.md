@@ -55,16 +55,16 @@ page can also be extracted similarly.
 Implementation:
 
 We'll have a data file for each english month in the format `data-YYYY-MM.toml` (example: data-2024-10.toml) that has a
-single key `data` whose value is an array of `Event`s. By consuing all data files of the given format, we'll build a
-large, single array of `Event`s that will be consumed by the various pages in the style mentioned above.
+single key `data` whose value is an array of `Event`s. By consuing all data files of the given format, we'll build one
+large array of `Event`s that will be consumed by the various pages as mentioned above.
 
-All data files can be kept in a `data` folder in the same repository that this code lives under, anyone can perform an
-status update by sending Pull Request by adding an `Event` entry in the data file for the current month.
+All data files can be kept in a `data` folder in the same repository that this code lives under, anyone can perform a
+status update by sending a Pull Request that adds an `Event` entry in the data file for the current month.
 
 Pros and Cons:
 
 1. This implementation model forces our data to be open source as we're envisioning people contributing to status
-   updates. Making data accessible has its own benefits.
+   updates. Making data accessible has all sorts of benefits.
 1. Data lives in text files, no overhead of database setup/management.
 1. We can generate a simple static site based on the data on each git push. No server costs.
 1. The way we're generating a page for each event, `/event/<id>`, creates a permanent record for each event in its
