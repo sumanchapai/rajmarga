@@ -68,6 +68,31 @@ Pros and Cons:
    updates. Making data accessible has its own benefits.
 1. Data lives in text files, no overhead of database setup/management.
 1. We can generate a simple static site based on the data on each git push. No server costs.
+1. The way we're generating a page for each event, `/event/<id>`, creates a permanent record for each event in its
+   webpage. This can also serve as a historical record for the event.
 1. Cons: might be harder to hand over to a governmental entitry like Traffic or Road Department for centralized
    management. The nature of this project makes this suitable for publicly managed information system, and doesn't suit
    for centrally managed style.
+
+Dev:
+
+```
+npm i
+npm run dev
+```
+
+TODO:
+
+- [ ] Setup pre-commit hooks
+- [ ] Create models
+- [ ] Data directory, helper functions for reading data directory, parsing events array etc.
+- [ ] Populate data to `/index`
+- [ ] UI `/index`
+- [ ] Populate data to `/highway/<id>`
+- [ ] UI `/highway/<id>`
+- [ ] Populate data to `/province/<id>`
+- [ ] UI `/province/<id>`
+- [ ] Populate data to `/district/<id>`
+- [ ] UI `/district/<id>`
+- [ ] Populate data to `/event/<id>`
+- [ ] UI `/event/<id>`
