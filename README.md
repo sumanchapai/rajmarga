@@ -1,6 +1,6 @@
 This is a development centric README.
 
-Pages:
+**Pages**:
 
 1. `/index` provides search box and overall status (number of interrupted locations), highways interrupted, etc.
 1. `/highway/<id>` detail page of each highway.
@@ -8,7 +8,7 @@ Pages:
 1. `/district/<id>` detail page of each district.
 1. `/event/<id>` detail page of each event.
 
-Models:
+**Models**:
 
 ```
 Highway:
@@ -52,7 +52,7 @@ event array by district id, we'll have data for each `/district/<id>` page, grou
 `/provice/<id>` page. Likewise, grouping by highway id, gives data for `/highway/<id>` page. Data required for `/index`
 page can also be extracted similarly.
 
-Implementation:
+**Implementation**:
 
 We'll have a data file for each english month in the format `data-YYYY-MM.toml` (example: data-2024-10.toml) that has a
 single key `data` whose value is an array of `Event`s. By consuing all data files of the given format, we'll build one
@@ -61,7 +61,7 @@ large array of `Event`s that will be consumed by the various pages as mentioned 
 All data files can be kept in a `data` folder in the same repository that this code lives under, anyone can perform a
 status update by sending a Pull Request that adds an `Event` entry in the data file for the current month.
 
-Pros and Cons:
+**Pros and Cons**:
 
 1. This implementation model forces our data to be open source as we're envisioning people contributing to status
    updates. Making data accessible has all sorts of benefits.
@@ -73,14 +73,14 @@ Pros and Cons:
    management. The nature of this project makes this suitable for publicly managed information system, and doesn't suit
    for centrally managed style.
 
-Dev:
+**Dev**:
 
 ```
 npm i
 npm run dev
 ```
 
-TODO:
+**TODO**:
 
 - [ ] Setup pre-commit hooks
 - [ ] Create models
