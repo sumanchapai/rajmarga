@@ -27,7 +27,6 @@ District:
     name_nepali: string
     province: Province.id
 
-
 Latitude: float
 Longitude: float
 
