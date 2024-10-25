@@ -8,8 +8,8 @@ import { parse } from 'smol-toml'
 
 const DATA_DIR = path.join(process.cwd(), '../data')
 
-const regex = /data-2024-(\d{2}).toml/
-function isValidFileName(name: string): boolean {
+const regex = /data-\d{4}-(\d{2}).toml/
+export function isValidFileName(name: string): boolean {
   // Expected format is "data-YYYY-MM.toml" (example: data-2024-10.toml)
   if (regex.test(name)) {
     const month = parseInt(regex.exec(name)![1])
