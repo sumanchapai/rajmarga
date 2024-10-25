@@ -83,8 +83,8 @@ npm run dev
 **TODO**:
 
 - [ ] Setup pre-commit hooks
-- [ ] Create models
-- [ ] Data directory, helper functions for reading data directory, parsing events array etc.
+- [x] Create models
+- [x] Data directory, helper functions for reading data directory, parsing events array etc.
 - [ ] Populate data to `/index`
 - [ ] UI `/index`
 - [ ] Populate data to `/highway/<id>`
