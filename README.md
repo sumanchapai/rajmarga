@@ -96,3 +96,5 @@ npm run dev
 - [ ] UI `/district/<id>`
 - [ ] Populate data to `/event/<id>`
 - [ ] UI `/event/<id>`
+- [ ] Github Actions for formatting/linting
+- [ ] Github Actions for checking validity of `data/` directory and files
