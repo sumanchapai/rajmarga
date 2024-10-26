@@ -14,7 +14,7 @@ const config: Config = {
   moduleNameMapper: {
     '^@/(.*)$': '<rootDir>/$1',
   },
-  testEnvironment: 'jsdom',
+  testEnvironment: 'node',
 }
 
 export default config
