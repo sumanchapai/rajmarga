@@ -101,3 +101,5 @@ npm run dev
 - [ ] Github Actions for checking validity of `data/` directory and files
 - [ ] Add validation script to check if the data in each data file is valid: belongs to corresponding month file and id
       is unique for each event, etc. etc.
+- [ ] Migrate to eslint v9. NextJS 15 (which we are using) techincally supports the version 9 but doesn't provide any
+      documentation whatsoever regarding how to replace the `extends` keyword which eslint v9 doesn't support.
