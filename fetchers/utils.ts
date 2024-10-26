@@ -5,8 +5,10 @@ import path from 'path'
 import assert from 'assert'
 import { DataFileSchema, Event } from '@/schema'
 import { parse } from 'smol-toml'
+import { inDevEnvironment } from '@/env'
 
-const DATA_DIR = path.join(process.cwd(), '../data')
+const DATA_DIR_NAME = inDevEnvironment ? '../data' : '../example-data'
+const DATA_DIR = path.join(process.cwd(), DATA_DIR_NAME)
 
 const regex = /data-\d{4}-(\d{2}).toml/
 export function isValidFileName(name: string): boolean {

@@ -99,3 +99,5 @@ npm run dev
 - [ ] UI `/event/<id>`
 - [ ] Github Actions for formatting/linting
 - [ ] Github Actions for checking validity of `data/` directory and files
+- [ ] Add validation script to check if the data in each data file is valid: belongs to corresponding month file and id
+      is unique for each event, etc. etc.
