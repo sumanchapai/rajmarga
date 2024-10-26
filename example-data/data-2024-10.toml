@@ -2,24 +2,24 @@
 id = 1
 locationLong = 12.12
 locationLat = 3.53
-location = Muglin
+location = "Muglin"
 districtId = 35
 highwayIds = [1, 2] 
 
   [[data.status]]
   time = 2024-10-23T00:00:00Z
   condition = "some issue in bride"
-  condtionNep = "पुलमा समस्या"
-  code: "CLOSED"
+  conditionNep = "पुलमा समस्या"
+  code = "CLOSED"
 
   [[data.status]]
   time = 2024-10-24T00:00:00Z
   condition = "bridge one way"
-  condtionNep = "पुलमा समस्या, एकतर्फी बाटो"
-  code: "ONE_WAY"
+  conditionNep = "पुलमा समस्या, एकतर्फी बाटो"
+  code = "ONE_WAY"
 
   [[data.status]]
   time = 2024-10-25T00:00:00Z
   condition = "fixed"
-  condtionNep = "पुल पुरा रुपमा सुचारु "
-  code: "OPEN"
+  conditionNep = "पुल पुरा रुपमा सुचारु "
+  code = "OPEN"

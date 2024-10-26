@@ -1,7 +1,7 @@
 import { Event } from '@/schema'
 import { allDataFiles, eventsInDataFile } from './utils'
 
-function getAllEvents(): Event[] {
+export function getAllEvents(): Event[] {
   // Read all the data files
   const dataFiles = allDataFiles()
   const eventsFromEachDataFile = dataFiles.map(eventsInDataFile)

@@ -34,7 +34,7 @@ const EventSchema = z.object({
   locationLong: LongitudeSchema,
   locationLat: LatitudeSchema,
   location: z.string(),
-  locationNep: z.string(),
+  locationNep: z.string().optional(),
   districtId: z.number(), // District ID reference
   highwayIds: z.array(z.number()), // Array of Highway IDs
   status: z.array(StatusSchema),

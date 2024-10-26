@@ -7,7 +7,7 @@ import { DataFileSchema, Event } from '@/schema'
 import { parse } from 'smol-toml'
 import { inDevEnvironment } from '@/env'
 
-const DATA_DIR_NAME = inDevEnvironment ? '../data' : '../example-data'
+const DATA_DIR_NAME = inDevEnvironment ? 'example-data' : 'data'
 const DATA_DIR = path.join(process.cwd(), DATA_DIR_NAME)
 
 const regex = /data-\d{4}-(\d{2}).toml/
@@ -26,7 +26,7 @@ export function allDataFiles(): string[] {
   const files = fs.readdirSync(DATA_DIR)
   // Verify all files are named correctly
   files.forEach((fileName) => assert(isValidFileName(fileName)))
-  return files
+  return files.map((x) => path.join(DATA_DIR, x))
 }
 
 // Reads the contents of a given .toml datafile
