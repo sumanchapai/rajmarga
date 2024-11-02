@@ -7,7 +7,9 @@ import { DataFileSchema, Event } from '@/schema'
 import { parse } from 'smol-toml'
 import { inDevEnvironment } from '@/env'
 
-const DATA_DIR_NAME = inDevEnvironment ? 'example-data' : 'data'
+// TODO:
+// Change the production environment prefix
+const DATA_DIR_NAME = inDevEnvironment ? 'example-data' : 'example-data'
 const DATA_DIR = path.join(process.cwd(), DATA_DIR_NAME)
 
 const regex = /data-\d{4}-(\d{2}).toml/

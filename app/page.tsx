@@ -1,5 +1,5 @@
 import { QueryBox } from '@/components/Landing/QueryBox'
-import { HomePageStats } from '@/components/Landing/HomePageStats'
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -8,7 +8,12 @@ export default function Home() {
         Road Status | <span className="font-medium text-red-700"> Nepal </span>
       </h1>
       <QueryBox />
-      <HomePageStats />
+      Home page stats is hidden from here. Checkout the{' '}
+      <Link href="/test" className="underline">
+        test
+      </Link>{' '}
+      route.
+      {/* <HomePageStats /> */}
     </div>
   )
 }
